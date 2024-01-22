@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- !FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- !bootstrap -->
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <section id="bg">
+        <section id="bgform">
+            <section class="form">
+                <div class="row p-0 m-0">
+                    <div class="col-sm-6" id="c1">
+                        <h3 id="formTitle">Create Account </h3>
+                        <form action="" class="myform needs-validation" id="form" novalidate>
+                            <input class="form-control" id="nameInput" type="text" name="name" placeholder="Name"
+                                required>
+                            <div class="invalid-feedback" id="nameError">Please enter your name.</div>
+
+                            <input class="form-control" id="emailInput" type="email" name="email"
+                                placeholder="Email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+                            <div class="invalid-feedback" id="emailError">Please enter a valid email address.</div>
+
+                            <input class="form-control" id="passwordInput" type="password" name="password"
+                                placeholder="Password" required>
+                            <div class="invalid-feedback" id="passwordError">Please enter a password.</div>
+
+                            <button type="button" onclick="addUser()" class="button-18 form-control" role="button">SignUp</button>
+                        </form>
+
+                        <form action="" class="myform needs-validation" id="loginForm" style="display: none;" novalidate>
+                            <input class="form-control" id="loginEmailInput" type="email" name="loginEmail"
+                                placeholder="Email" required>
+                            <div class="invalid-feedback" id="loginEmailError">Please enter a valid email address.</div>
+
+                            <input class="form-control" id="loginPasswordInput" type="password" name="loginPassword"
+                                placeholder="Password" required>
+                            <div class="invalid-feedback" id="loginPasswordError">Please enter a password.</div>
+
+                            <button type="button" onclick="loginUser()" class="button-18 form-control" role="button">SignIn</button>
+                        </form>
+
+                        <button type="button" onclick="toggleForm()" class="button-18 form-control" role="button">Switch to SignIn</button>
+
+                    </div>
+                    <div class="col-sm-6" id="c2">
+                        <h1>Hello Friend !</h1>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </section>
+
+    <script src="js/main.js"></script>
+  
+</body>
+
+</html>
